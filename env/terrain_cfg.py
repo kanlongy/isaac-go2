@@ -20,4 +20,6 @@ class HfUniformDiscreteObstaclesTerrainCfg(HfTerrainBaseCfg):
     """The minimum distance between obstacles (in m)."""
     platform_width: float = 1.0
     """The width of the square platform at the center of the terrain. Defaults to 1.0."""
+    border_width: float = 0.0  # 添加这一行
+    """The width of the border around the terrain (in m). Defaults to 0.0."""
     avoid_positions: list[list[float, float]] = []
